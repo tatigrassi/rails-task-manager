@@ -1,0 +1,9 @@
+<h1>♡ MY BOOTCAMP TASKS ♡</h1>
+<% @tasks.each do |task| %>
+  <h2><%= link_to task.title, task_path(task) %></h2>
+  <p><%= task.details %></p>
+  <input type="checkbox"><br>
+<% end %>
+<h3>
+  <%= link_to "Add a new task", new_task_path %>
+</h3>
